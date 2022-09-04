@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: digital;
+  src: url("fonts/digital.ttf");
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.ui {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 10px solid;
+  border-color: #808080 #fff #fff #808080;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flags,
+.timer {
+  user-select: none;
+  width: 100px;
+  color: #ff0000;
+  font-size: 60px;
+  text-align: center;
+  background-color: #000;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-family: digital;
+}
+
+.btn-restart {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  font-size: 35px;
+  border: 7px solid;
+  border-color: #fff #808080 #808080 #fff;
+  background-color: #c6c6c6;
+}
+
+.game-container {
+  padding: 30px;
+  border: 10px solid;
+  border-color: #fff #808080 #808080 #fff;
+  background-color: #c6c6c6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  border: 10px solid;
+  border-color: #808080 #fff #fff #808080;
+}
+.square {
+  font-family: "Press Start 2P", cursive;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: #c6c6c6;
+  border: 0.5px solid #808080;
+}
+
+.mine {
+  border: 7px solid;
+  border-color: #fff #808080 #808080 #fff;
+  background-color: #c6c6c6;
+}
+
+.one {
+  color: #0000ff;
+}
+.two {
+  color: #008000;
+}
+.three {
+  color: #ff0000;
+}
+.four {
+  color: #000080;
+}
+.five {
+  color: #800000;
+}
+.six {
+  color: #008080;
+}
+.seven {
+  color: #000;
+}
+.eight {
+  color: #808080;
+}
+.pressed {
+  border: 7px solid;
+  border-color: #808080 #808080 #fff #fff;
+}
